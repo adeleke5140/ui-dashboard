@@ -1,17 +1,67 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 3 | @import 'mixins.scss';
- *   |         ^^^^^^^^^^^^^
- *   '
- *   style.scss 3:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 3 \2502  @import 'mixins.scss';\a   \2502          ^^^^^^^^^^^^^\a   \2575 \a   style.scss 3:9  root stylesheet";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+body {
+  font-family: "Inter", sans-serif;
+  background: #E5E5E5;
+  font-size: 16px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 30px;
+  padding: 2em 3em;
+}
+
+.sidebar1 {
+  background-color: #fff;
+  padding: 3em 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sidebar1__img {
+  height: 40px;
+  margin-bottom: 2em;
+  margin-left: 6%;
+}
+.sidebar1__button {
+  display: block;
+  background: #5E81F4;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  padding: 0.5em 2em;
+  font-weight: 400;
+  margin-bottom: 1.5em;
+}
+.sidebar1__nav {
+  list-style-type: none;
+}
+.sidebar1__nav a {
+  text-decoration: none;
+}
+.sidebar1__nav li {
+  list-style-type: none;
+  color: #C7CADD;
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-align: center;
+  margin: 1.5em;
+}
+.sidebar1__nav li p {
+  display: inline;
+}
+
+.nav-icon {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
