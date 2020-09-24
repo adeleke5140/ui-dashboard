@@ -1,3 +1,68 @@
+
 body{
 	font-family:'Inter', sans-serif;
+	background: $bg-color;
+	font-size: 16px;
 }
+
+.container{
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-rows: auto;
+	grid-gap: 30px;
+	padding: 2em 3em;
+}
+
+.sidebar1{
+	background-color:$main-color;
+	padding: 3em 2em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items:center;
+
+	&__img{
+		height: 40px;
+		margin-bottom: 2em;
+		margin-left:6%;
+	}
+
+	&__button{
+		display: block;
+		background:$p-color1;
+		color:$main-color;
+		border:none;
+		border-radius: 7px;
+		padding: .5em 2em;
+		@include fw-medium;
+		margin-bottom: 1.5em;
+	}
+
+	&__nav{
+		list-style-type: none;
+
+		a{
+			text-decoration: none;
+		}
+
+		li{
+			list-style-type: none;
+			color:$n-color2;
+			@include fw-bold;
+			font-size: .8rem;
+			text-align: center;
+			margin: 1.5em;
+
+			p{
+				display: inline;
+			}
+		}
+	}
+
+}
+
+.nav-icon{
+	display: inline-block;
+	margin-right: 10px;
+}
+
