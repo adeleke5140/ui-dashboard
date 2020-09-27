@@ -1,0 +1,209 @@
+.aside {
+	padding: 2.5em 2em 0 1em;
+	background-color:$main-color;
+
+
+	&__profile{
+		display: flex;
+		align-items: center;
+		margin-bottom: 3em;
+
+		img{
+			border-radius: 7px;
+			margin-right: 10%;
+			display: block;
+		}
+
+		h3{
+			font-size: .8rem;
+		}
+
+		.icon-arrow{
+			display: block;
+			color: grey;
+			margin-left: 10%;
+		}
+	}
+}
+
+.progress-title{
+	margin-bottom: 1.5em;
+	font-size: .9rem
+}
+
+.icon-set{
+	display: flex;
+	align-items:center;
+	justify-content: space-between;
+	margin-bottom:1.5em;
+
+	.icon-pencil{
+		color: #5E81F4;
+		background: #EEF2FD;
+		padding: 8px;
+		width: 30px;
+		height: 30px;
+		border-radius: 7px;
+		margin-right: 20px;
+	}
+
+	.icon-camera{
+		color: #0cc3e7;
+		background: #d5f5fb;
+		padding: 8px;
+		width: 30px;
+		height: 30px;
+		border-radius: 7px;
+		margin-right: 20px;
+	}
+
+	.icon-wave{
+		color: #ffae33;
+		background: #ffefd6;
+		padding: 8px;
+		width: 30px;
+		height: 30px;
+		border-radius: 7px;
+		margin-right: 20px;
+	}
+	span{
+		margin-left: -20%;
+		font-size: .8rem;
+
+		p:first-child{
+			@include fw-bold;
+		}
+
+		p:last-child{
+			color:$n-color3;
+			font-size: .7rem;
+		}
+	}
+}
+
+.progress{
+	margin-left: 20px;
+
+	.meter{
+		height: 6px;
+		position: relative;
+		background: #EEF2FD;
+		-moz-border-radius: 2px;
+		-webkit-border-radius: 2px;
+		border-radius: 10px;
+		box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+		width: 70px;
+
+	span{
+		width: 75%;
+		display: block;
+		height: 100%;
+		border-top-right-radius: 20px;
+		border-bottom-right-radius: 20px;
+		border-top-left-radius: 20px;
+		border-bottom-left-radius: 20px;
+		background-color: #5E81F4;
+		background-image: linear-gradient( center bottom, rgb(43,194,83) 37%, rgb(84,240,84) 69% );
+		//box-shadow: inset 0 2px 9px rgba(255,255,255,0.3), inset 0 -2px 6px rgba(0,0,0,0.4);
+		position: relative;
+		overflow: hidden;
+		}
+	}
+}
+
+.progress .green{
+	background-color:#d5f5fb;
+
+	span{
+		background-color: #0cc3e7;
+	}
+}
+
+.progress .orange{
+	background-color: #ffefd6;
+	box-shadow: none;
+
+	span{
+		background-color:#ffae33;
+		box-shadow:none;
+	}
+}
+
+.icon-wave + span {
+	margin-right: 20px;
+}
+
+
+.aside__task{
+	margin-top: 3em;
+
+	h3 {
+		font-size: .9rem;
+		margin-bottom: 1.5em;
+	}
+
+	div {
+		display: flex;
+		margin-bottom:1.5em;
+		align-items:center;
+
+	}
+
+	.icon-comment{
+		margin-right: 8%;
+		color: #5E81F4;
+		background: #EEF2FD;
+		padding: 8px;
+		width: 30px;
+		height: 30px;
+		border-radius: 7px;
+		//margin-right: 20px;
+	}
+
+	.icon-cube{
+		margin-right: 8%;
+		color: #ffae33;
+		background: #ffefd6;
+		padding: 8px;
+		width: 30px;
+		height: 30px;
+		border-radius: 7px;
+		//margin-right: 20px;
+	}
+
+	span{
+		font-size: .8rem;
+		line-height: 1.5;
+
+		p:first-child{
+			@include fw-bold;
+		}
+
+		p:last-child{
+			color: $n-color3;
+			font-size: .7rem;
+		}
+	}
+}
+
+.aside__illustration{
+	background:url('../images/illustration2.svg') no-repeat;
+	padding:1em;
+	height: 300px;
+	margin-top: 4.9em;
+
+	h3{
+		width: 40%;
+		font-size: .9rem;
+		margin-bottom: 2em;
+	}
+
+	img{
+		margin-right: 5%;
+		background: $main-color;
+		padding: 8px;
+		width: 35px;
+		height: 35px;
+		border-radius: 50px;
+	}
+}

@@ -10,3 +10,10 @@
 @mixin fw-bold {
 	font-weight: 600;
 }
+
+@mixin flex-container{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding:1em;
+}

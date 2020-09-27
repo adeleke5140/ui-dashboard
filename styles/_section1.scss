@@ -1,21 +1,22 @@
 
 body{
 	font-family:'Inter', sans-serif;
-	background: $bg-color;
 	font-size: 16px;
+	background:#C8C4C4;
+	//background:url('../images/bg-image.png') no-repeat;
+	//background-position: center center;
 }
 
 .container{
 	display: grid;
 	grid-template-columns: 1fr 2fr 1fr;
 	grid-template-rows: auto;
-	grid-gap: 30px;
 	padding: 2em 3em;
 }
 
 .sidebar1{
 	background-color:$main-color;
-	padding: 3em 2em;
+	padding: 2.5em 1em;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -47,11 +48,16 @@ body{
 
 		li{
 			list-style-type: none;
-			color:$n-color2;
-			@include fw-bold;
+			color:$n-color3;
+			@include fw-medium;
 			font-size: .8rem;
 			text-align: center;
-			margin: 1.5em;
+			margin-bottom: 2.5em;
+			display: table;
+
+			&:nth-of-type(1){
+				margin-top:1.5em;
+			}
 
 			p{
 				display: inline;
@@ -61,8 +67,63 @@ body{
 
 }
 
+//highlight the all courses link item
+
+.nav-highlight{
+	color: $p-color1;
+	@include fw-bold;
+	position:relative;
+
+	&::after{
+		content: "";
+		background:$p-color1;
+		height: 19px;
+		width: 2px;
+		position: absolute;
+		right: -124px;
+	}
+}
+
+
+
+//styles to make icons aligned 
+
 .nav-icon{
 	display: inline-block;
-	margin-right: 10px;
+	margin-right: 20px;
 }
+
+.section1__upgrade{
+	background: $n-color4;
+	border-radius:15px;
+	padding: 2em;;
+	margin-top: 2.5em;
+	display: flex;
+	flex-direction: column;
+
+	&__icon{
+		height: 80px;
+		position:relative;
+		bottom:70px;
+	}
+
+	p{
+		color: $n-color1;
+		text-align:center;
+		font-size:.9rem;
+		position:relative;
+		bottom:30px;
+	}
+
+	&__button{
+		border:none;
+		border-radius:7px;
+		background:$p-color1;
+		padding:1em;
+		color: $main-color;
+		@include fw-bold;
+	}
+}
+
+
 

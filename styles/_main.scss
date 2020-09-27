@@ -1,0 +1,167 @@
+main {
+	padding: 2em;
+	background: $bg-color;
+}
+
+.main__navbar{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+		&__icon-field{
+			position: relative;
+
+			.icon{
+				position:absolute;
+				top:13px;
+				left: 15px;
+				color: grey;
+			}
+		}
+
+		input[type="text"]{
+			border:none;
+			padding:1em;
+			padding-left:3em;
+			width: 400px;
+			border-radius: 5px;
+			}
+
+		.icon-bell{
+			color: grey;
+			font-size:1.5rem;
+		}
+	}
+
+	.main__section{
+		padding-top:2em;
+		display: flex;
+		justify-content: space-between;
+		align-items:center;
+
+		&__title{
+			color: $n-color1;
+		}
+
+		&__list{
+			list-style-type: none;
+			display: inline-block;
+
+			a{
+				text-decoration: none;
+
+				li {
+					display: inline-block;
+					margin-right: 1.5em;
+					font-size: .7rem;
+					color: $n-color3;
+					@include fw-bold;
+				}
+			}
+		}
+	}
+
+.main__section__list .is-active{
+	color:$p-color1;
+	position:relative;
+
+	&::after{
+		content: "";
+		position:absolute;
+		background:$p-color1;
+		width: 14px;
+    height: 2px;
+    right: 30%;
+    top: 20px;
+	}
+}
+
+.main__section__list .is-marginless{
+	margin-right: 0;
+}
+
+.image-grid{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	grid-template-rows:auto;
+	grid-gap: 30px;
+	padding-top:2em;
+
+		&__image1{
+			background:url('../images/image-20-bg1.png');
+			height: 300px;
+			background-position: 50% center;
+			background-repeat: no-repeat;
+			border-radius: 10px;
+			grid-column: 1/3;
+			@include flex-container;
+		}
+
+		&__image2{
+			background: url('../images/image-23-bg2.png');
+			border-radius:10px;
+			grid-column:1/2;
+			height: 265px;
+			background-position: 93% 7%;
+			//pacity: .7;
+			@include flex-container
+
+		}
+
+		&__image3{
+			background:url('../images/image-24-bg3.png');
+			border-radius:10px;
+			grid-column:2/3;
+			height: 265px;
+			background-position: 10%;
+			background-repeat: no-repeat;
+			background-size: cover;
+			//opacity: .7;
+			@include flex-container;
+		}
+}
+
+
+
+//every element in the first image that spans 2columns
+
+
+.class-info1{
+	color: $main-color;
+	display: flex;
+	justify-content: space-between;
+	line-height: 1.4;
+
+	span p{
+		font-size: .8rem;
+	}
+}
+
+.class-info2{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	span .icon {
+		color: #fff;
+		background: rgba(255, 255, 255, 0.44);
+		padding: 7px;
+		width: 25px;
+		height: 25px;
+		border-radius: 5px;
+	}
+
+	img{
+		border-radius:50%;
+		height: 40px;
+		border: 2px solid #fff;
+	}
+}
+
+.relative-middle{
+	position:relative;
+	top: 10px;
+}
+
+	
+
