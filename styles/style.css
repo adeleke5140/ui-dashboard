@@ -443,4 +443,32 @@ main {
   border-radius: 50px;
 }
 
+@media only screen and (min-width: 2px) and (max-width: 767px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    height: 100vh;
+  }
+
+  .oops {
+    font-weight: 600;
+    font-family: "Indie Flower", cursive;
+    font-size: 2rem;
+    background: linear-gradient(90deg, #020024 0%, #090979 13%, #00d4ff 61%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .container {
+    display: none;
+  }
+}
+@media only screen and (min-width: 767px) {
+  .oops {
+    display: none;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
