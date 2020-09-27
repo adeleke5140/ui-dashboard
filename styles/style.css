@@ -76,6 +76,10 @@ body {
   }*/
 }
 
+.blue {
+  color: #5E81F4;
+}
+
 .nav-icon {
   display: inline-block;
   margin-right: 20px;
