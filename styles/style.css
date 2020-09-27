@@ -66,14 +66,14 @@ body {
   color: #5E81F4;
   font-weight: 600;
   position: relative;
-}
-.nav-highlight::after {
-  content: "";
-  background: #5E81F4;
-  height: 19px;
-  width: 2px;
-  position: absolute;
-  right: -124px;
+  /*&::after{
+  	content: "";
+  	background:$p-color1;
+  	height: 19px;
+  	width: 2px;
+  	position: absolute;
+  	right: -124px;
+  }*/
 }
 
 .nav-icon {

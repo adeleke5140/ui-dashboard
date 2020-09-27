@@ -74,14 +74,14 @@ body{
 	@include fw-bold;
 	position:relative;
 
-	&::after{
+	/*&::after{
 		content: "";
 		background:$p-color1;
 		height: 19px;
 		width: 2px;
 		position: absolute;
 		right: -124px;
-	}
+	}*/
 }
 
 
