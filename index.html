@@ -25,31 +25,31 @@
 				</a>
 				<a href="#">
 					<li>
-						<i class="fas fa-border-all nav-icon"></i>
-						<p>All courses</p>
+						<i class="fas fa-th-large nav-icon"></i>
+						<p class="nav-highlight">All courses</p>
 					</li>
 				</a>
 				<a href="#">
 					<li>
-						<img src="" alt="">
+						<i class="far fa-folder nav-icon"></i>
 						<p>Resources</p>
 					</li>
 				</a>
 				<a href="#">
 					<li>
-						<img src="" alt="">
+						<i class="far fa-user nav-icon "></i>
 						<p>Friends</p>
 					</li>
 				</a>
 				<a href="#">
 					<li>
-						<img src="" alt="">
+						<i class="far fa-comment-alt nav-icon"></i>
 						<p>Chats</p>
 					</li>
 				</a>
 				<a href="#">
 					<li>
-						<img src="" alt="">
+						<i class="fas fa-cog nav-icon"></i>
 						<p>Settings</p>
 					</li>
 				</a>
@@ -57,93 +57,196 @@
 		</nav>
 
 		<div class="section1__upgrade">
-			<img src="" alt="">
-			<p>Upgrade to premuim for more resource</p>
-			<button class="section1__upgrade__button"></button>
+			<img src="images/Framelg-folder-.svg" alt=" a blue folder icon" class="section1__upgrade__icon">
+			<p>Upgrade to premuim<br> for more resource</p>
+			<button class="section1__upgrade__button">
+				Upgrade
+			</button>
 		</div>
 	</section>
 
 	<main class="main">
 
 		<nav class="main__navbar">
-			<input type="text" name="search" class="main__navbar__input">
-			<img src="" alt="" class="main__navbar__icon">
+
+			<div class="main__navbar__icon-field">
+				<i class="fas fa-search icon"></i>
+				<label for="search">
+					<input type="text" name="search" class="main__navbar__input"
+					placeholder="Search">
+				</label>
+			</div>
+
+			<span>
+				<i class="far fa-bell icon-bell"></i>
+			</span>
 		</nav>
 
 
 		<section class="main__section">
-			<h1 class="main__title">
+			<h1 class="main__section__title">
 				All courses
 			</h1>
 
-			<ul class="main__list">
+			<ul class="main__section__list">
 				<a href="#">
-					<li>Ongoing</li>
+					<li class="is-active">Ongoing</li>
 				</a>
 				<a href="#">
 					<li>Favourite</li>
 				</a>
 				<a href="#">
-					<li>Complete</li>
+					<li class="is-marginless">Complete</li>
 				</a>
 			</ul>
 		</section>
 			
 		<section class="image-grid">
-			<img src="" alt="" class="image-grid__img1">
-			<img src="" alt="" class="image-grid__img2">
-			<img src="" alt="" class="image-grid__img3">
+
+			<div class="image-grid__image1">
+				<div class="class-info1">
+					<span>
+						<h3>UI/UX Design</h3>
+						<p>20 lessons</p>
+					</span>
+					<span>
+						<p>
+							2h 20min
+						</p>
+					</span>
+				</div>
+
+				<div class="class-info2">
+					<span>
+						<i class="fas fa-play icon"></i>
+					</span>
+
+					<img src="images/man-64.jpg" alt=" a black man on a blue jean top">
+				</div>
+
+
+			</div>
+
+			<div class="image-grid__image2">
+				<div class="class-info1">
+					<span>
+						<h3>Photography</h3>
+						<p>12 lessons</p>
+					</span>
+					<span>
+						<p class="relative-middle">1h 30min</p>
+					</span>
+				</div>
+
+				<div class="class-info2">
+					<span>
+						<i class="fas fa-play icon"></i>
+					</span>
+
+					<img src="images/woman1.png" alt="a white woman with black hair">
+				</div>
+			</div>
+			
+			<div class="image-grid__image3">
+				<div class="class-info1">
+					<span>
+						<h3>Animation</h3>
+						<p>12 lessons</p>
+					</span>
+					<span>
+						<p class="relative-middle">2h 30min</p>
+					</span>
+				</div>
+
+				<div class="class-info2">
+					<span>
+						<i class="fas fa-play icon"></i>
+					</span>
+
+					<img src="images/man-2.png" alt="a white man with curly hair">
+				</div>
+			</div>
 		</section>
 	</main>
 
+
+
 	<section class="aside">
 		<div class="aside__profile">
-			<img src="" alt="">
-			<p>Alexa Rouge</p>
+			<img src="images/Rect-img-woman.png" alt=" a white woman">
+			<h3>Alexa Rouge</h3>
+			<i class="fas fa-angle-down icon-arrow"></i>
 		</div>
 
 		<div class="aside__skills">
-			<h3>Progress</h3>
+			<h3 class="progress-title">Progress</h3>
 
-			<div>
-				<img src="" alt="">
-				<p></p>
-				<progess></progess>
+			<div class="icon-set">
+				<i class="fas fa-pencil-alt icon-pencil"></i>
+				<span>
+					<p class="title">UI/UX Design</p>
+					<p class="subtitle">Advanced</p>
+				</span>
+				
+				<div class="progress">
+					<div class="meter">
+					  <span style="width: 85%"></span>
+					</div>
+				</div>
 			</div>
 
-			<div>
-				<img src="" alt="">
-				<p></p>
-				<progess></progess>
+			<div class="icon-set">
+				<i class="fas fa-camera icon-camera"></i>
+				<span>
+					<p class="title">Photography</p>
+					<p class="subtitle">Intermediate</p>
+				</span>
+				<div class="progress">
+					<div class="meter green">
+					  <span style="width: 50%"></span>
+					</div>
+				</div>
 			</div>
 
-			<div>
-				<img src="" alt="">
-				<p></p>
-				<progess></progess>
+			<div class="icon-set">
+				<i class="fas fa-wave-square icon-wave"></i>
+				<span>
+					<p class="title">Animation</p>
+					<p class="subtitle">Advanced</p>
+				</span>
+				<div class="progress">
+					<div class="meter orange">
+					  <span style="width: 70%"></span>
+					</div>
+				</div>
 			</div>
 		</div>
 
 		<div class="aside__task">
 
-			<h3>Upcoming Task</h3>
+			<h3 class="title">Upcoming Task</h3>
 
 			<div>
-				<img src="" alt="">
-				<p></p>
+				<i class="far fa-comment-alt icon-comment"></i>
+				<span>
+					<p class="title">UI/UX- Discussion</p>
+					<p class="subtitle">27th Oct 2020,Tuesday</p>
+				</span>
 			</div>
 
 			<div>
-				<img src="" alt="">
-				<p></p>
+				<i class="fas fa-cube icon-cube"></i>
+				<span>
+					<p class="title">Animation- 3D Animation</p>
+					<p class="subtitle">27th Oct 2020, Tuesday3</p>
+				</span>
 			</div>
 		</div>
 
 		<div class="aside__illustration">
-
-			<h3>Download Ohara now</h3>
-			<img src="" alt="">
-			<img src="" alt="">
+			<h3>Download Ohara now!</h3>
+			<img src="images/playstore.svg" alt="a google play store app icon">
+			<img src="images/apple.svg" alt=" a black apple logo">
 		</div>
 	</section>
 	</div>
