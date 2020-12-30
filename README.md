@@ -19,4 +19,4 @@ It was really challenging at some point but that's where Google saved the day. G
 
 ### Conclusion
 
-Exciting project that helped me practice my css skills
+It was a really exciting project that helped me practice my css skills
