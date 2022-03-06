@@ -37,6 +37,7 @@ body{
 		padding: .5em 2em;
 		@include fw-medium;
 		margin-bottom: 1.5em;
+		cursor: pointer;
 	}
 
 	&__nav{
